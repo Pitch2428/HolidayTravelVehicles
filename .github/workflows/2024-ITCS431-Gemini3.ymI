@@ -1,0 +1,30 @@
+
+name: Java CI 
+on:
+  push:
+    branches: [ "Pith" ]
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/setup-java@v4
+      with:
+        ref: $({ github.event.pull_request.head.ref 11 
+        fetch-depth: ${{ env.PR FETCH DEPTH 11
+        
+    - name: Set up JDK
+      uses: actions/setup-java@vl
+        with: 
+          java-version: '11' # You can change this to the version 
+
+    - name: Compile Java
+      run: 
+        cd [Your Branch]/HolidayTravelVehicles 
+        javac -d . *.java 
+
+# Compile java file from directory 
+
+
